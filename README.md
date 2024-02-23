@@ -4,4 +4,7 @@
   
   It offers basic functionalities for adding, removing, and searching for elements in the list, making it a useful tool for a variety of software development applications.
 
-  Also, it can be used to implement complex data structures such as queues or stacks for managing data efficiently and organized. Due to the circular nature of the list, it can be used to process data in circular loops. 
+  Also, it can be used to implement complex data structures such as queues or stacks for managing data efficiently and organized. Due to the circular nature of the list, it can be used to process data in circular loops.
+
+  ## Documentation
+  - https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-8.0
