@@ -1,10 +1,11 @@
 using System.Collections;
+using LinkedList;
 
-namespace LinkedList
+namespace DoublyCircularLinkedList.Classes
 {
     public class DoublyCircularLinkedList<T> : ICollection<T>
     {
-        private readonly Node<T> sentinel = new (default);
+        private readonly Node<T> sentinel = new(default);
 
         public DoublyCircularLinkedList()
         {
@@ -39,7 +40,7 @@ namespace LinkedList
         public Node<T> AddAfter(Node<T> node, T value)
         {
             ValidateNode(node);
-            Node<T> newNode = new (value);
+            Node<T> newNode = new(value);
             AddBefore(node.Next!, newNode);
 
             return newNode;
@@ -53,7 +54,7 @@ namespace LinkedList
 
         public Node<T> AddBefore(Node<T> node, T value)
         {
-            Node<T> newNode = new (value);
+            Node<T> newNode = new(value);
             AddBefore(node, newNode);
 
             return newNode;
@@ -75,7 +76,7 @@ namespace LinkedList
 
         public Node<T> AddFirst(T value)
         {
-            Node<T> newNode = new (value);
+            Node<T> newNode = new(value);
             AddAfter(sentinel, newNode);
 
             return newNode;
@@ -88,7 +89,7 @@ namespace LinkedList
 
         public Node<T> AddLast(T value)
         {
-            Node<T> newNode = new (value);
+            Node<T> newNode = new(value);
             AddBefore(sentinel, newNode);
 
             return newNode;
@@ -221,7 +222,7 @@ namespace LinkedList
 
         private void ValidateArrayAvailableSpace(T[] array, int arrayIndex)
         {
-            if (Count <= (array.Length - arrayIndex))
+            if (Count <= array.Length - arrayIndex)
             {
                 return;
             }

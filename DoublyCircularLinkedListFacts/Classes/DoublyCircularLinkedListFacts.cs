@@ -1,6 +1,8 @@
+using DoublyCircularLinkedList.Classes;
+using LinkedList;
 using Xunit;
 
-namespace LinkedList
+namespace DoublyCircularLinkedListFacts.Classes
 {
     public class DoublyCircularLinkedListFacts
     {
@@ -299,11 +301,11 @@ namespace LinkedList
         [Fact]
         public void GetEnumerator_ListOfIntegers_ShouldReturnExpectedResult()
         {
-            var intList = new DoublyCircularLinkedList<int> { 10, 20, 30, 40};
+            var intList = new DoublyCircularLinkedList<int> { 10, 20, 30, 40 };
             IEnumerator<int> enumerator = intList.GetEnumerator();
             int sum = 0;
 
-            while(enumerator.MoveNext())
+            while (enumerator.MoveNext())
             {
                 sum += enumerator.Current;
             }
