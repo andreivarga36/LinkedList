@@ -1,8 +1,7 @@
-using DoublyCircularLinkedList.Classes;
-using LinkedList;
+using LinkedList.Classes;
 using Xunit;
 
-namespace DoublyCircularLinkedListFacts.Classes
+namespace LinkedListFacts.Classes
 {
     public class DoublyCircularLinkedListFacts
     {

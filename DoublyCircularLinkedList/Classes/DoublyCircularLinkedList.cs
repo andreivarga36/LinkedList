@@ -1,11 +1,10 @@
 using System.Collections;
-using LinkedList;
 
-namespace DoublyCircularLinkedList.Classes
+namespace LinkedList.Classes
 {
     public class DoublyCircularLinkedList<T> : ICollection<T>
     {
-        private readonly Node<T> sentinel = new(default);
+        private readonly Node<T> sentinel = new (default!);
 
         public DoublyCircularLinkedList()
         {
@@ -40,7 +39,7 @@ namespace DoublyCircularLinkedList.Classes
         public Node<T> AddAfter(Node<T> node, T value)
         {
             ValidateNode(node);
-            Node<T> newNode = new(value);
+            Node<T> newNode = new (value);
             AddBefore(node.Next!, newNode);
 
             return newNode;
@@ -54,7 +53,7 @@ namespace DoublyCircularLinkedList.Classes
 
         public Node<T> AddBefore(Node<T> node, T value)
         {
-            Node<T> newNode = new(value);
+            Node<T> newNode = new (value);
             AddBefore(node, newNode);
 
             return newNode;
@@ -76,7 +75,7 @@ namespace DoublyCircularLinkedList.Classes
 
         public Node<T> AddFirst(T value)
         {
-            Node<T> newNode = new(value);
+            Node<T> newNode = new (value);
             AddAfter(sentinel, newNode);
 
             return newNode;
@@ -89,7 +88,7 @@ namespace DoublyCircularLinkedList.Classes
 
         public Node<T> AddLast(T value)
         {
-            Node<T> newNode = new(value);
+            Node<T> newNode = new (value);
             AddBefore(sentinel, newNode);
 
             return newNode;
@@ -184,13 +183,13 @@ namespace DoublyCircularLinkedList.Classes
         public void RemoveFirst()
         {
             ValidateList();
-            Remove(First);
+            Remove(First!);
         }
 
         public void RemoveLast()
         {
             ValidateList();
-            Remove(Last);
+            Remove(Last!);
         }
 
         private static void ValidateArray(T[] array)

@@ -1,6 +1,4 @@
-﻿using DoublyCircularLinkedList.Classes;
-
-namespace LinkedList
+﻿namespace LinkedList.Classes
 {
     public class Node<T>
     {
