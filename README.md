@@ -1,10 +1,14 @@
-# LinkedList
+# Doubly Circular Linked List
 
-  This project provides an implementation of a doubly circular linked list. A doubly circular linked list is a data structure useful for storing and manipulating a set of elements in a specific order.
+  - This implementation provides key functionalities for managing a doubly circular linked list. It allows dynamic resizing and efficient operations such as adding, removing, and accessing elements in the list.
   
-  It offers basic functionalities for adding, removing and searching for elements in the list, making it a useful tool for a variety of software development applications.
+## Features
 
-  Also, it can be used to implement complex data structures such as queues or stacks for managing data efficiently and organized. Due to the circular nature of the list, it can be used to process data in circular loops.
+  - **Dynamic Resizing**: The linked list dynamically resizes to accommodate any number of elements.   
+  - **Efficient Operations**: Supports efficient operations like adding, removing, and accessing elements by leveraging the doubly circular linked list structure.   
+  - **Enumeration**: Provides methods for iterating through the elements of the list.
+  - **Comprehensive Testing**: The project includes comprehensive unit tests using Xunit to validate the functionality and reliability of the DoublyCircularLinkedList class.
 
-  ## Documentation
-  - https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-8.0
+### Documentation
+  
+  - [Generic Collections: LinkedList<T>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-8.0)
